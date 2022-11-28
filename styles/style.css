@@ -15,9 +15,23 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
-
-.header__logo_place {
-  position: absolute;
+.description {
+  margin-top: 100px;
+}
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.feyman {
+  
+}
+.kayfman {
+  margin-top: 90px;
+  margin-bottom: 90px; 
+}
+.footer {
+  margin-top: 60px;
+  margin-bottom: 40px; 
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
