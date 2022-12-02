@@ -123,7 +123,7 @@
 }
 .section-title {
   display: flex;
-  margin: auto;
+  margin: 100px auto 20px auto;
   justify-content: center;
   width: 60%;
   line-height: 1.15;
@@ -142,15 +142,18 @@
   border: 1px solid red;
 }
 .table {
+  margin: 0 auto 100px;
   display: flex;
   flex-direction: column;
+  width: 1100px;
 }
-.flex-row {
+.row {
+  margin-top: 60px;
   display: flex;
   border: 1px solid red;
   justify-content: space-between;
 }
-.flex-row1 {
+.table__cell {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -159,10 +162,12 @@
 .table__heading {
   display: flex;
   justify-content: flex-start;
+  margin-top: 0;
 }
 .table__text {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 0;
 }
 .feynman {
   border: 1px solid red;
@@ -200,11 +205,20 @@
   align-items:center;
 
 }
-.kayfman {
-  margin-top: 90px;
-  margin-bottom: 90px;
+.kaufman {
+  overflow: hidden;
 }
-.kaufman__title_them_dark {
+
+.section-title__them_dark {
+  margin: 90px auto 20px auto;
+  text-align: center;
+  width: 60%;
+  height: 1.15;
+  font-size: 60;
+  font-weight: 600;
+  border: 1px solid red;
+}
+.section-subtitle__them_dark {
   margin: auto;
   text-align: center;
   width: 60%;
@@ -213,14 +227,11 @@
   font-weight: normal;
   border: 1px solid red;
 }
-.kaufman__subtitle_them_dark {
-  margin: auto;
-  text-align: center;
-  width: 60%;
-  height: 1.15;
-  font-size: 60;
-  font-weight: 600;
-  border: 1px solid red;
+.triangle {
+  position: absolute;
+  right: -210px;
+  width: 877px;
+  height: 877px;
 }
 .footer {
   min-height: 350px;
@@ -228,6 +239,7 @@
 }
 .footer__columns {
   display: flex;
+  justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
@@ -238,30 +250,38 @@
   height:32px;
   border: 1px solid red;
 }
-.footer__columns_copyright {
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.footer__columns_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-basis: 711px;
   border: 1px solid red;
 }
-.footer__columns_info {
+.footer__columns_content_info {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
 }
 .footer__column-heading {
+  margin-top: 0;
   height: 30px;
   font-size: 18px;
   font-weight: 600;
   border: 1px solid red;
 }
-.footer__columns_social {
+.footer__columns_content_social {
   border: 1px solid red;
 }
 .footer__column-links {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
   height: 30px;
   font-size: 18px;
-  display: flex;
   font-weight: normal;
   border: 1px solid red;
 }
