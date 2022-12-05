@@ -10,21 +10,22 @@
 }
 
 .header {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
 }
-
 .header__logo {
+  margin-top: 0;
   width:228px;
   height:32px;
 }
-.header__logo_place_header {
+.logo_place_header {
   position: absolute;
   top:30px;
   left:64px;
-  
 }
 .header__title {
   position: absolute;
@@ -46,31 +47,28 @@
   height: 25px;
   font-size: 18px;
   font-weight: normal;
-  display:flex;
-  align-items: flex-end;
-  border: 1px solid red;
 }
+
 .header__link {
   text-decoration: none;
   border: 1px solid red;
 }
+
 .header__main-illustration {
+  width:765px;
+  height: 608px;
   position: absolute;
   right:0px;
   bottom:0px;
-  width:765px;
-  height: 608px;
   z-index:1;
   border: 1px solid red;
 }
 .header__square-pic {
   position: absolute;
-  top:64px;
-  right:0;
-  display:flex;
-  align-items:flex-end;
   width:568px;
   height:568px;
+  top:64px;
+  right:0;
   background-color: #2f80ed;
   z-index:0;
   border: 1px solid red;
@@ -82,8 +80,8 @@
 }
 .two-columns {
   display: flex;
+  justify-content: space-between;
   margin: auto;
-  justify-content: center;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 80%;
@@ -100,18 +98,23 @@
   color:  #2f80ed;
 
 }
-.two-columns__main_text {
+.two-columns__main-text {
+  width:80%;
+  min-width: 784px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 784px;
-  width:80%;
+  
+}
+.two-columns__paragraph {
   line-height:34px;
   font-size: 24px;
   font-weight: normal;
-}
-.paragraph {
   margin: 0;
+}
+.two-columns__paragraph_center {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .two-columns__span-effect {
   line-height:34px;
@@ -170,19 +173,13 @@
   margin-bottom: 0;
 }
 .feynman {
+  position: relative;
+  height: 890px;
   border: 1px solid red;
-}
-.image {
-  display: flex;
-  border: 1px solid red;
-  width: 867;
-  height: 637;
-}
-.feynman {
-  
 }
 .feynman__title {
   margin: auto;
+  margin-bottom: 70px;
   text-align: center;
   width: 648px;
   height: 1.15;
@@ -200,16 +197,32 @@
   border: 1px solid red;
 }
 .feynman__link {
+  height: 50%;
   display: flex;
-  flex-direction: column;
-  align-items:center;
-
+  justify-content: flex-end;
+  margin-right: 48px;
+  border: 1px solid red;
 }
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  border: 1px solid red;
+  width: 867;
+  height: 637;
+  z-index: -1;
+}
+
 .kaufman {
   overflow: hidden;
+  position: relative;
+  background-color:  #1f1f1f;
 }
 
 .section-title__them_dark {
+  color: white;
   margin: 90px auto 20px auto;
   text-align: center;
   width: 60%;
@@ -219,6 +232,7 @@
   border: 1px solid red;
 }
 .section-subtitle__them_dark {
+  color: white;
   margin: auto;
   text-align: center;
   width: 60%;
@@ -227,19 +241,40 @@
   font-weight: normal;
   border: 1px solid red;
 }
+.table_them_dark {
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;}
+
+.table__cell_them_dark {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid red;
+  }
+.table__heading_theme_dark {
+  color: white;
+}
+.table__text_theme_dark {
+  color: white;
+}
 .triangle {
   position: absolute;
   right: -210px;
   width: 877px;
   height: 877px;
+  
 }
 .footer {
+  background-color: #1f1f1f;
   min-height: 350px;
   border: 1px solid red;
 }
 .footer__columns {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
@@ -250,9 +285,13 @@
   height:32px;
   border: 1px solid red;
 }
+.footer__logo_place_footer {
+  color: white;
+}
 .footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
+  color: white;
 }
 .footer__columns_content_copyright {
   display: flex;
@@ -267,6 +306,7 @@
   border: 1px solid red;
 }
 .footer__column-heading {
+  color: white;
   margin-top: 0;
   height: 30px;
   font-size: 18px;
@@ -280,6 +320,7 @@
   margin-top: 0;
   display: flex;
   flex-direction: column;
+  color: white;
   height: 30px;
   font-size: 18px;
   font-weight: normal;
