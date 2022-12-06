@@ -9,14 +9,6 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -24,60 +16,65 @@
   margin-top: 80px;
 }
 
-.header_logo_place_header {
+.header {
+  position: relative;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+}
+.header__logo {
+  margin-top: 0;
   width: 228px;
   height: 32px;
-  left: 64px;
+}
+.logo_place_header {
+  position: absolute;
   top: 30px;
-  position: absolute;
+  left: 64px;
 }
-
-.header_title {
-  width: 730px;
+.header__title {
+  position: absolute;
+  left: 64px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  left: 64px;
-  position: absolute;
-  z-index: 100;
+  width: 730px;
+  font-size: 102px;
   line-height: 96px;
-  font-size: 102;
-  font-weight: 600;
+  font-weight: 600px;
 }
-
-.header_subtitle {
-  width: 388px;
-  left: 64px;
+.header__subtitle {
   position: absolute;
-  z-index: 100;
+  left: 64px;
   bottom: 30px;
-  line-height: 25px;
-  font-size: 18;
+  width: 388px;
+  height: 25px;
+  font-size: 18px;
   font-weight: normal;
 }
 
-.header_square-pic {
-  width: 568px;
-  height: 568px;
-  right: 0px;
-  top: 64px;
-  background-color: #2f80ed;
-  position: absolute;
-  z-index: 0;
-}
-.header_main-illustration {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.header__link {
+  text-decoration: none;
 }
 
-.header_main-illustration_img {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
+  right: 0px;
+  bottom: 0px;
   z-index: 1;
+}
+.header__square-pic {
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  z-index: 0;
 }
 
 .redline {
