@@ -113,7 +113,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  /* margin: 0px; */
+  margin: 0px;
 }
 
 .two-columns__main-text {
@@ -125,11 +125,14 @@
 }
 .two-columns__paragraph {
   min-height: 30px;
-  /* margin-bottom: 30px; */
+  margin: 0 0 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  /* margin: 0px; */
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -192,7 +195,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20 0 0px;
+  margin: 20px 0 0;
 }
 /* _________________________feyman______________________ */
 
@@ -223,7 +226,7 @@
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
-  margin: 0 70 0px;
+  margin: 0 70px 0;
 }
 
 .feynman__link {
@@ -404,7 +407,7 @@
 
 .footer__column-links {
   text-decoration: none;
-  color: #2f80ed;
+  color: white;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -416,7 +419,7 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
-  color: #2f80ed;
+  color: white;
 }
 
 .footer__social-icons {
