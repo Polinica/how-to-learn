@@ -5,7 +5,7 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 90px; /*  по заданию 90 */
+  padding-bottom: 90px; /*  по заданию 90 */
   z-index: 1;
 }
